@@ -1,0 +1,174 @@
+body,  html {
+    height: 827px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0 0.5%;
+    margin-left: -1%;
+    margin-top: -0.5%;
+    background: black;
+    float: left;
+    position: fixed;
+    border-bottom: 1px solid darkgrey;
+}
+
+header #logo {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: black;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #ffc107;
+}
+
+#logo a {
+    text-decoration: none;
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 60px;
+    font-family: 'Audiowide', cursive;
+}
+
+#logo a:hover {
+    color: greenyellow;
+}
+
+#logo span:hover {
+    color: darkorange;
+}
+
+#Login-main {
+    width: 1921px;
+    margin-left: -0.5%;
+    height: 827px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid #cce5ff;
+    background-image: url("../Images/Background_login.jpg");
+    background-blend-mode: multiply;
+    background-color: #491217;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#Login-main h5 {
+    font-size: 3em;
+    color: #6f42c1;
+    font-family: 'Audiowide', cursive;
+}
+
+#h5-correct {
+    margin-left: 44%;
+    margin-top: 7%;
+}
+
+#form-input {
+    margin-top: 15px;
+    width: 95%;
+    margin-left: 15%;
+    font-size: 1.1em;
+
+}
+
+#login {
+    margin-top: 7%;
+}
+
+#password {
+    margin-top: 7%;
+}
+
+#form-input input, #form-input textarea {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 1em;
+    color: black;
+}
+
+#form-input input:focus {
+    border-color: #6f42c1;
+    border-radius: 7px;
+}
+
+.btn {
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #6f42c1;
+    text-shadow: black;
+    cursor: pointer;
+    color: #34ce57;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 10%;
+}
+
+#send-mess {
+    margin-left: -19%;
+    margin-top: 7%;
+
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.text-button {
+    margin-left: 34%;
+}
+
+#all {
+    border: 2px solid darkslateblue;
+    border-radius: 20px;
+    width: 27%;
+    height: 350px;
+    margin-left: 35%;
+}
+
+.register span {
+    color: #6f42c1;
+    margin-left: 7%;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.2em;
+}
+
+.register span:hover {
+    color: orange;
+}
+
+#reg-link {
+    margin-top: 19%;
+}
+
+#reg-link a {
+    text-decoration: none;
+}
+
+.errors {
+    color: yellow;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.5%;
+    border: 2px solid dodgerblue;
+    border-radius: 3px;
+    width: 20%;
+    margin-left: 38.5%;
+}

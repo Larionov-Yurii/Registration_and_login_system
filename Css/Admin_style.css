@@ -1,0 +1,79 @@
+body, html {
+    height: 850px;
+    background-image: url("../Images/Personal_area.jpg");
+    background-blend-mode: multiply;
+    background-color: dodgerblue;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0 0.5%;
+    margin-left: -1%;
+    margin-top: -4%;
+    background: black;
+    position: fixed;
+    border-bottom: 1px solid darkgrey;
+}
+
+header #logo {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: black;
+    border-bottom: 1px solid silver;
+}
+
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo span:hover {
+    color: darkorange;
+}
+
+#visiting {
+    margin-top: 4%;
+    margin-left: 35%;
+}
+
+.user-style {
+    color: yellow;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid dodgerblue;
+    border-radius: 3px;
+    width: 45%;
+
+}
+
+.btn {
+    font-size: 0.9em;
+    text-shadow: black;
+    cursor: pointer;
+    color: #34ce57;
+    font-family: 'Audiowide', cursive;
+    margin-top: 0.2%;
+}
+
+header #logo #logout-button {
+    line-height: 40px;
+    text-align: right;
+    font-family: 'Audiowide', cursive;
+}
+
+#logo #logout-button span:hover {
+    color: darkorange;
+}
