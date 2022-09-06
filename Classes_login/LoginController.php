@@ -15,7 +15,7 @@ class LoginController extends Login
 
     public function loginUser() {
         if ($this->emptyInput() == false) {
-            $_SESSION['empty-inputs'] = 'Empty login or password';
+            $_SESSION['notes'] = 'Empty login or password';
             header("Location: ../Login_page.php");
             exit();
         }

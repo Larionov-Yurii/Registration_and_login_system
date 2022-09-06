@@ -9,7 +9,7 @@ class Login extends DatabaseConnection
 
         if (!$stmt->execute()) {
             $stmt = null;
-            $_SESSION['wrong-stmt'] = 'Wrong Statement';
+            $_SESSION['notes'] = 'Wrong Statement';
             header("Location: ../Login_page.php");
             exit();
         }
@@ -19,7 +19,7 @@ class Login extends DatabaseConnection
 
         if ($check_password == false || $stmt->rowCount() == 0) {
             $stmt = null;
-            $_SESSION['wrong-log-or-pass'] = 'Wrong Login or Password';
+            $_SESSION['notes'] = 'Wrong Login or Password';
             header("Location: ../Login_page.php");
             exit();
         }
@@ -27,7 +27,7 @@ class Login extends DatabaseConnection
         if ($check_password == true) {
             if (!$stmt->execute()) {
                 $stmt = null;
-                $_SESSION['wrong-stmt'] = 'Wrong Statement';
+                $_SESSION['notes'] = 'Wrong Statement';
                 header("Location: ../Login_page.php");
                 exit();
             }

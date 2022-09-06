@@ -12,12 +12,12 @@ class Signup extends DatabaseConnection
 
         if (!$stmt->execute()) {
             $stmt = null;
-            $_SESSION['wrong-stmt'] = 'Wrong Statement';
+            $_SESSION['notes'] = 'Wrong Statement';
             header("Location: ../Registration_page/Registration_page.php");
             exit();
         } else {
             $stmt = null;
-            $_SESSION['all-good'] = 'I have good news for you, you are a new user in our system';
+            $_SESSION['notes'] = 'I have good news for you, you are a new user in our system';
             header("Location: ../Registration_page/Registration_page.php");
             exit();
         }
@@ -28,7 +28,7 @@ class Signup extends DatabaseConnection
 
         if (!$stmt->execute()) {
             $stmt = null;
-            $_SESSION['wrong-stmt'] = 'Wrong Statement';
+            $_SESSION['notes'] = 'Wrong Statement';
             header("Location: ../Registration_page/Registration_page.php");
             exit();
         }

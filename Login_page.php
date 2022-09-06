@@ -46,24 +46,10 @@ session_start();
     </div>
 
     <?php
-    if (isset($_SESSION['wrong-log-or-pass'])) {
-        echo '<p class = "errors">' . $_SESSION['wrong-log-or-pass'] . '</p>';
+    if (isset($_SESSION['notes'])) {
+        echo '<p class = "errors">' . $_SESSION['notes'] . '</p>';
     }
-    unset($_SESSION['wrong-log-or-pass']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['empty-inputs'])) {
-        echo '<p class = "errors">' . $_SESSION['empty-inputs'] . '</p>';
-    }
-    unset($_SESSION['empty-inputs']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['wrong-stmt'])) {
-        echo '<p class = "errors">' . $_SESSION['wrong-stmt'] . '</p>';
-    }
-    unset($_SESSION['wrong-stmt']);
+    unset($_SESSION['notes']);
     ?>
 
 </div>

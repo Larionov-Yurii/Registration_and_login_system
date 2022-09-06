@@ -44,52 +44,10 @@ session_start();
     </div>
 
     <?php
-    if (isset($_SESSION['empty-inputs'])) {
-        echo '<p class = "errors">' . $_SESSION['empty-inputs'] . '</p>';
+    if (isset($_SESSION['notes'])) {
+        echo '<p class = "errors">' . $_SESSION['notes'] . '</p>';
     }
-    unset($_SESSION['empty-inputs']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['invalid-login'])) {
-        echo '<p class = "errors">' . $_SESSION['invalid-login'] . '</p>';
-    }
-    unset($_SESSION['invalid-login']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['invalid-email'])) {
-        echo '<p class = "errors">' . $_SESSION['invalid-email'] . '</p>';
-    }
-    unset($_SESSION['invalid-email']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['password-mismatch'])) {
-        echo '<p class = "errors">' . $_SESSION['password-mismatch'] . '</p>';
-    }
-    unset($_SESSION['password-mismatch']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['data-is-already-taken'])) {
-        echo '<p class = "errors">' . $_SESSION['data-is-already-taken'] . '</p>';
-    }
-    unset($_SESSION['data-is-already-taken']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['wrong-stmt'])) {
-        echo '<p class = "errors">' . $_SESSION['wrong-stmt'] . '</p>';
-    }
-    unset($_SESSION['wrong-stmt']);
-    ?>
-
-    <?php
-    if (isset($_SESSION['all-good'])) {
-        echo '<p class = "errors">' . $_SESSION['all-good'] . '</p>';
-    }
-    unset($_SESSION['all-good']);
+    unset($_SESSION['notes']);
     ?>
 
 </div>

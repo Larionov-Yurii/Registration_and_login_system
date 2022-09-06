@@ -20,32 +20,32 @@ class SignupController extends Signup
 
     public function signupUser() {
         if ($this->emptyInput() == false) {
-            $_SESSION['empty-inputs'] = 'Empty Inputs';
+            $_SESSION['notes'] = 'Empty Inputs';
             header("Location: ../Registration_page/Registration_page.php");
             exit();
         }
 
         if ($this->invalidLogin() == false) {
+            $_SESSION['notes'] = 'Wierd name for creating a new login';
             header("Location: ../Registration_page/Registration_page.php");
-            $_SESSION['invalid-login'] = 'Wierd name for creating a new login';
             exit();
         }
 
         if ($this->invalidEmail() == false) {
+            $_SESSION['notes'] = 'Wierd name for creating a new email';
             header("Location: ../Registration_page/Registration_page.php");
-            $_SESSION['invalid-email'] = 'Wierd name for creating a new email';
             exit();
         }
 
         if ($this->passwordMismatch() == false) {
+            $_SESSION['notes'] = 'Password mismatch';
             header("Location: ../Registration_page/Registration_page.php");
-            $_SESSION['password-mismatch'] = 'Password mismatch';
             exit();
         }
 
         if ($this->loginTakenCheck() == false) {
+            $_SESSION['notes'] = 'Login or email is already taken';
             header("Location: ../Registration_page/Registration_page.php");
-            $_SESSION['data-is-already-taken'] = 'Login or email is already taken';
             exit();
         }
 
