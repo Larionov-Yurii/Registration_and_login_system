@@ -1,6 +1,6 @@
 <?php
-session_start();
 // Class with implementation logic for registration
+session_start();
 
 class Signup extends DatabaseConnection
 {
